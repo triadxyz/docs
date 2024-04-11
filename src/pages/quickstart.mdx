@@ -1,0 +1,47 @@
+export const description =
+  'On this page, look how initialize and use top of Triad functions.'
+
+# Initialization
+
+Use our protocol to develop your apps and dive into the Solana ecosystem. We tokenize startups, simplifying investments and fostering liquidity.
+
+## Install
+
+```bash
+npm install @triadxyz/triad-protocol
+
+# or
+
+yarn add @triadxyz/triad-protocol
+```
+
+## Init Triad Instance
+
+- For the wallet(second paramater) you can use the KeyPair! `Add in your env and setup a new wallet`
+- Attention the wallet is the payer of the transactions
+
+```ts
+import { Connection } from '@solana/web3.js';
+import Triad from '@triadxyz/triad-protocol'
+
+const triad = new Triad(connection, {
+  publicKey: wallet.publicKey!,
+  signTransaction: wallet.signTransaction!,
+  signAllTransactions: wallet.signAllTransactions!,
+  signMessage: wallet.signMessage!,
+})
+```
+
+<Properties>
+  <Property name="connection" type="Connection">
+    Here you can use the connection from @solana/web3.js
+  </Property>
+  <Property name="Wallet" type="Wallet">
+    You can use the wallet from @solana/wallet-adapter-react or Just use the
+    Keypair!
+  </Property>
+  <Property name="opts" type="ConfirmOptions | undefined">
+    The ConfirmOptions is the options for the confirmations of the transactions
+    (skipPreflight, preflightCommitment, commitment)
+  </Property>
+</Properties>
