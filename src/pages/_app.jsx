@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }) {
         {router.pathname === '/' ? (
           <title>Triad</title>
         ) : (
-          <title>{`${pageProps.title} - `}</title>
+          <title>{`Triad - ${pageProps.title}`}</title>
         )}
         <meta name="description" content={pageProps.description} />
       </Head>
