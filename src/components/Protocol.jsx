@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import { motion, useMotionTemplate, useMotionValue } from 'framer-motion'
 
-import { GridPattern } from '@/components/GridPattern'
-import { Heading } from '@/components/Heading'
-import { UserIcon } from '@/components/icons/UserIcon'
+import { GridPattern } from '../components/GridPattern'
+import { Heading } from '../components/Heading'
+import { UserIcon } from '../components/icons/UserIcon'
 
 const resources = [
   {

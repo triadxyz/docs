@@ -10,7 +10,7 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 import { create } from 'zustand'
 
-import { Tag } from '@/components/Tag'
+import { Tag } from '../components/Tag'
 
 const languageNames = {
   js: 'JavaScript',
