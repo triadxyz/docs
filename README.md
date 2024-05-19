@@ -14,4 +14,4 @@ Next, run the development server:
 npm run dev
 ```
 
-Finally, open [http://localhost:3000](http://localhost:3000) .
+Finally, open [http://localhost:3000](http://localhost:3000)
