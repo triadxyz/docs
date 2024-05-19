@@ -1,47 +1,27 @@
-export const description =
-  'On this page, look how initialize and use top of Triad functions.'
+import { HeroPattern } from '@/components/HeroPattern'
 
-# Initialization
+export const description = 'Ticker price'
 
-Use our protocol to develop your apps and dive into the Solana ecosystem. We tokenize startups, simplifying investments and fostering liquidity.
+<HeroPattern />
 
-## Install
+*Quick start*
 
-```bash
-npm install @triadxyz/triad-protocol
+*Open position:*
 
-# or
+Select the project you want, enter its details, define your trade size and the long or short position. On the details screen you will be able to see all the information about all the project data, e.g. volume, negotiations, TVL and the price definitions which are the on chain data. You will also be able to see the market sentiment of that project if the community is experiencing growth or decline. In the details you will be able to see your open positions in real time.
 
-yarn add @triadxyz/triad-protocol
-```
+![Open Position Image](/images/intro-1.png)
 
-## Init Triad Instance
+In the open positions of that project you will be able to see the total price PNL, bring opening, type, total purchased, total position spread, ticker amount and you can close your position
 
-- For the wallet(second paramater) you can use the KeyPair! `Add in your env and setup a new wallet`
-- Attention the wallet is the payer of the transactions
+![Open Position Details Image](/images/intro-2.png)
 
-```ts
-import { Connection } from '@solana/web3.js';
-import Triad from '@triadxyz/triad-protocol'
+*Close position:*
 
-const triad = new Triad(connection, {
-  publicKey: wallet.publicKey!,
-  signTransaction: wallet.signTransaction!,
-  signAllTransactions: wallet.signAllTransactions!,
-  signMessage: wallet.signMessage!,
-})
-```
+![Close Position Image](/images/intro-4.png)
 
-<Properties>
-  <Property name="connection" type="Connection">
-    Here you can use the connection from @solana/web3.js
-  </Property>
-  <Property name="Wallet" type="Wallet">
-    You can use the wallet from @solana/wallet-adapter-react or Just use the
-    Keypair!
-  </Property>
-  <Property name="opts" type="ConfirmOptions | undefined">
-    The ConfirmOptions is the options for the confirmations of the transactions
-    (skipPreflight, preflightCommitment, commitment)
-  </Property>
-</Properties>
+Fees are charged automatically.
+
+*Protocol analysis:*
+
+![Protocol Analysis Image](/images/intro-3.png)

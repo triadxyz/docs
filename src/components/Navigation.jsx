@@ -185,13 +185,19 @@ function NavigationGroup({ group, className }) {
 export const navigation = [
   {
     title: '🌐 Protocol',
-    links: [{ title: 'Introduction', href: '/' }],
+    links: [
+      { title: 'Introduction', href: '/' },
+      { title: 'Ticker price', href: '/ticker-price' },
+      { title: 'Points', href: '/points' },
+      { title: 'Referrals', href: '/referrals' },
+      { title: 'NFT Collection', href: '/nft-collection' },
+    ],
   },
   {
     title: '📃 Documentation',
     links: [
       { title: 'Quickstart', href: '/quickstart' },
-      // { title: 'Project', href: '/project' },
+      { title: 'FAQs', href: '/faqs' },
     ],
   },
 ]
