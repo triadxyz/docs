@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image'
 
 export function Logo(props) {
   return (
     <span className="flex items-center">
-      <span className="text-sm font-bold text-blue-400">TRIAD</span>
+      <Image width={100} height={31} src="/svg/logo-dark.svg" alt="triad logo blue" />
     </span>
   )
 }
