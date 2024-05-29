@@ -64,13 +64,6 @@ export const Header = forwardRef(function Header({ className }, ref) {
         </Link>
       </div>
       <div className="ml-auto flex items-center gap-5">
-        <nav className="hidden md:block">
-          <ul role="list" className="flex items-center gap-8">
-            <TopLevelNavItem href="https://discord.gg/7Vc6eKXr">
-              Discord
-            </TopLevelNavItem>
-          </ul>
-        </nav>
         <div className="hidden md:block md:h-5 md:w-px md:bg-zinc-900/10 md:dark:bg-white/15" />
         <div className="flex gap-4">
           <ModeToggle />
