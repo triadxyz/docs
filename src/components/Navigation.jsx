@@ -191,6 +191,7 @@ export const navigation = [
       { title: 'Points', href: '/points' },
       { title: 'Referrals', href: '/referrals' },
       { title: 'NFT Collection', href: '/nft-collection' },
+      { title: 'NFT Stake', href: '/nft-stake' },
     ],
   },
   {

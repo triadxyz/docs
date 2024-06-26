@@ -1,0 +1,112 @@
+# NFT Stake
+
+## Requirements for Staking
+To participate in staking, users must own at least one NFT from the TRIAD collection.
+
+## Rarity of TRIAD NFTs
+Each NFT in the TRIAD collection has a rarity based on its rank. Below are the rarity categories and their respective rank ranges:
+
+- **Mythic**: Ranks 1 to 18
+- **Legendary**: Ranks 19 to 91
+- **Epic**: Ranks 92 to 275
+- **Rare**: Ranks 276 to 643
+- **Uncommon**: Ranks 644 to 1103
+- **Common**: Ranks 1104 to 1839
+
+## Multipliers for Partner Collections
+In addition to owning a TRIAD NFT, users can boost their staking rewards by having certain NFTs from partner collections in their wallet. The multiplier is applied only if you own NFTs from these collections. Here are the available multipliers:
+
+- **Pyth Alligators**: 1.5x
+- **200 $Pyth stake**: 1.5x
+- **Coleta PFP**: 1.5x
+- **Undead Pikenians**: 1.5x
+
+### How the Multipliers Work
+- If you have an NFT from the **Pyth Alligators** collection, your staking rewards will be multiplied by 1.5.
+- The same 1.5x multiplier applies to the other collections listed above.
+- If you own multiple NFTs from different qualifying collections, only the highest multiplier available will be applied, but they do not stack.
+
+## Staking Seasons
+### First Season
+- **Start**: June 24, 2024
+- **End**: July 24, 2024
+- **Total Rewards**: 100,000 tTRIAD
+
+## Calculation of Weekly Rewards
+
+### Assumptions and Basic Formula
+1. **Daily Total Reward (DTR):** The total amount of tTRIAD distributed per day to all staking participants.
+2. **Rarity and Multipliers:**
+   - Each TRIAD NFT has a rarity weight.
+   - Partner collection multipliers boost the daily reward.
+
+### Calculation Steps
+
+1. **Determine the Daily Total Reward (DTR)**
+   - Assume DTR is a fixed value per day. For example, if 100,000 tTRIAD is distributed over 30 days, the DTR would be `100,000 tTRIAD / 30 days = 3,333.33 tTRIAD/day`.
+
+2. **Calculate Individual Daily Reward (IDR)**
+   - IDR depends on the rank and rarity of the TRIAD NFT and the multipliers from partner collections.
+   - Define weights for rarities:
+     - Mythic: 6
+     - Legendary: 5
+     - Epic: 4
+     - Rare: 3
+     - Uncommon: 2
+     - Common: 1
+
+3. **Calculate Weight Adjusted by Rank**
+   - Rank weight is determined by the formula `Rank Weight = (Max Rank - Rank + 1) / Max Rank`, where Max Rank = 1839.
+   - Adjusted weight for rank within the rarity category: `Adjusted Weight = Rarity Weight * Rank Weight`.
+
+4. **Apply Multipliers from Partner Collections**
+   - The final weight is adjusted by the partner collection multiplier.
+
+5. **Proportional Distribution of Rewards**
+   - The sum of all users' adjusted weights determines the proportion of the DTR each user receives.
+
+### Example Calculation
+
+Let's consider three users for simplicity:
+
+- **User A:**
+  - TRIAD NFT: Mythic, Rank 10 (Rarity Weight 6)
+  - Partner Collection: Undead Pikenians (1.5x)
+  - Rank Weight: `(1839 - 10 + 1) / 1839 = 1830 / 1839 ≈ 0.995`
+  - Adjusted Weight: `6 * 0.995 * 1.5 ≈ 8.955`
+
+- **User B:**
+  - TRIAD NFT: Legendary, Rank 50 (Rarity Weight 5)
+  - Partner Collection: None (1x)
+  - Rank Weight: `(1839 - 50 + 1) / 1839 = 1790 / 1839 ≈ 0.974`
+  - Adjusted Weight: `5 * 0.974 ≈ 4.870`
+
+- **User C:**
+  - TRIAD NFT: Epic, Rank 100 (Rarity Weight 4)
+  - Partner Collection: Coleta PFP (1.5x)
+  - Rank Weight: `(1839 - 100 + 1) / 1839 = 1740 / 1839 ≈ 0.946`
+  - Adjusted Weight: `4 * 0.946 * 1.5 ≈ 5.688`
+
+#### Calculating Proportional Daily Reward
+1. **Sum of Adjusted Weights:**
+   - Total: `8.955 + 4.870 + 5.688 ≈ 19.513`
+
+2. **Proportion of Daily Reward:**
+   - DTR: 3,333.33 tTRIAD
+   - User A: `(8.955 / 19.513) * 3,333.33 ≈ 1,529.96 tTRIAD/day`
+   - User B: `(4.870 / 19.513) * 3,333.33 ≈ 832.64 tTRIAD/day`
+   - User C: `(5.688 / 19.513) * 3,333.33 ≈ 970.73 tTRIAD/day`
+
+3. **Weekly Reward:**
+   - User A: `1,529.96 * 7 = 10,709.72 tTRIAD/week`
+   - User B: `832.64 * 7 = 5,828.48 tTRIAD/week`
+   - User C: `970.73 * 7 = 6,795.11 tTRIAD/week`
+
+### Summary Formula
+
+1. **Rank Weight (RW):** `(Max Rank - Rank + 1) / Max Rank`
+2. **Adjusted User Weight (AUW):** `Rarity Weight * RW * Multiplier`
+3. **Sum of Adjusted Weights (SAW):** `sum of AUW of all users`
+4. **Proportional Daily Reward of User (PDRU):** `AUW / SAW`
+5. **User's Daily Reward (UDR):** `DTR * PDRU`
+6. **User's Weekly Reward (UWR):** `UDR * 7`
