@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import clsx from 'clsx'
 import { AnimatePresence, motion, useIsPresent } from 'framer-motion'
-
 import { useIsInsideMobileNavigation } from '../components/MobileNavigation'
 import { useSectionStore } from '../components/SectionProvider'
 import { Tag } from '../components/Tag'
