@@ -188,8 +188,6 @@ export const navigation = [
     links: [
       { title: 'Introduction', href: '/' },
       { title: 'Ticker price', href: '/ticker-price' },
-      { title: 'Points', href: '/points' },
-      { title: 'Referrals', href: '/referrals' },
       { title: 'NFT Collection', href: '/nft-collection' },
       { title: 'NFT Stake', href: '/nft-stake' },
       { title: 'NFT Swap', href: '/nft-swap' },
