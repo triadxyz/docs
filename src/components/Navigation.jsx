@@ -192,6 +192,7 @@ export const navigation = [
       { title: 'Referrals', href: '/referrals' },
       { title: 'NFT Collection', href: '/nft-collection' },
       { title: 'NFT Stake', href: '/nft-stake' },
+      { title: 'NFT Swap', href: '/nft-swap' },
     ],
   },
   {
