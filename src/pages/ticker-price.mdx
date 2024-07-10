@@ -12,25 +12,51 @@ We do not use the token price in the protocol as the main parameter. Each piece 
 
 The ticker price is updated every 5 minutes.
 
-_Total TX_ has a weight of 3.69%;
-_User active_ weight of 9.6%;
-_Transaction failure_ weight of 0.369%,
-_Token price_ weight of 0.0369%.
+# Oracle V1
 
-Based on this, the ticker price is calculated. If the protocol does not have the token, a value of $0 is used as the default since, as the token has no price.
+Oracle V1 is a service developed to update ticker prices on the TriadFi platform. It allows integration and price updates using different data sources.
 
-# **Ticker Price Calculation**
+### Tickers
 
-_Fees:_
+Here are the ticker identifiers used by Oracle V1:
 
-_Operation fee:_ 0.869%
+```ts
+tDRIFT: "61sVpvF5X5SMAx1k7nkAPSnc5RnwsYjr5dzuMy7Geb7h",
+tJUPITER: "6APY6oGjapqMtfW3kvU9AB4osP6pnsQwEMHq4BdmPJXk",
+tPYTH: "7ysuK85P65zBuNiNwPEVgQ3h4FS8CDsxK5TstScgNiZ4"
+```
 
-- This fee is charged for maintaining orders and ticker prices.
+## Data Integrity Verification Protocol (DIVP)
 
-_Ticker project fee:_ 0.031%
+The Data Integrity Verification Protocol (DIVP) is a set of procedures and mechanisms designed to ensure that the data provided for price determination in Solana protocols is authentic, accurate, and reliable before being used for critical calculations, such as determining new token prices. This protocol includes the following steps:
 
-- This fee represents the amount earned by the trading protocol for operations initiated on its ticker.
+### Reception of Data from Multiple Sources
 
-_Share:_ 0.1%
+- Collect data from various on-chain metrics and liquidity pools to ensure redundancy and mitigate individual failures.
 
-- This fee is distributed to users holding Triad NFTs and partner collections.
+### Digital Signature Verification
+
+- Validate the digital signatures of the received data to ensure it originates from legitimate sources and has not been altered during transmission.
+
+### Data Aggregation and Comparison
+
+- Aggregate data received from different sources.
+- Compare the aggregated data with independent external sources to detect discrepancies.
+
+### Trust Policies Application
+
+- Define and apply trust policies to determine the reliability of the data. This may include weighting data based on the reputation of the source, eliminating outliers, etc.
+
+### Monitoring and Anomaly Detection
+
+- Implement real-time monitoring systems to detect anomalies or unusual patterns in the received data.
+
+### Logging and Auditing
+
+- Maintain detailed logs of all verification operations and data sources to allow for subsequent audits and ensure transparency.
+
+### Incident Response
+
+- Establish procedures for responding to security incidents, such as compromised data or detection of malicious sources.
+
+By following this protocol, we aim to provide robust and reliable price determinations for Solana-based protocols, leveraging on-chain metrics.
