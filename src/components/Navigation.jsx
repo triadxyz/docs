@@ -194,9 +194,13 @@ export const navigation = [
   },
   {
     title: '📃 Documentation',
+    links: [{ title: 'Quickstart', href: '/quickstart' }],
+  },
+  {
+    title: '❓ FAQs',
     links: [
-      { title: 'Quickstart', href: '/quickstart' },
-      { title: 'FAQs', href: '/faqs' },
+      { title: 'TriadFi', href: '/triadfi' },
+      { title: 'NFT', href: '/nft' },
     ],
   },
 ]
