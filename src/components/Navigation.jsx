@@ -187,9 +187,14 @@ export const navigation = [
     links: [
       { title: 'Introduction', href: '/' },
       { title: 'Ticker price', href: '/ticker-price' },
-      { title: 'NFT Collection', href: '/nft-collection' },
-      { title: 'NFT Stake', href: '/nft-stake' },
-      { title: 'NFT Swap', href: '/nft-swap' },
+    ],
+  },
+  {
+    title: '🔱 NFT',
+    links: [
+      { title: 'Collection', href: '/nft-collection' },
+      { title: 'Stake', href: '/nft-stake' },
+      { title: 'Swap', href: '/nft-swap' },
     ],
   },
   {
