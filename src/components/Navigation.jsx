@@ -198,10 +198,6 @@ export const navigation = [
     ],
   },
   {
-    title: '🪙 Tokenomics',
-    links: [{ title: '$TRD', href: '/tokenomics' }],
-  },
-  {
     title: '📃 Documentation',
     links: [{ title: 'Quickstart', href: '/quickstart' }],
   },
