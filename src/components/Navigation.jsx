@@ -184,10 +184,7 @@ function NavigationGroup({ group, className }) {
 export const navigation = [
   {
     title: '🌐 Protocol',
-    links: [
-      { title: 'Introduction', href: '/' },
-      { title: 'Ticker price', href: '/ticker-price' },
-    ],
+    links: [{ title: 'Introduction', href: '/' }],
   },
   {
     title: '🔱 NFT',
