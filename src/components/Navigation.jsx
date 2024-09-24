@@ -195,6 +195,14 @@ export const navigation = [
     ],
   },
   {
+    title: '💰 Season',
+    links: [
+      { title: 'Introduction', href: '/season' },
+      { title: 'General', href: '/season-general' },
+      { title: 'Referral', href: '/season-referral' },
+    ],
+  },
+  {
     title: '📃 Documentation',
     links: [{ title: 'Quickstart', href: '/quickstart' }],
   },
