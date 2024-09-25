@@ -195,12 +195,16 @@ export const navigation = [
     ],
   },
   {
-    title: '💰 Season',
+    title: '🏛️ Triad Season',
     links: [
       { title: 'Introduction', href: '/season' },
       { title: 'General', href: '/season-general' },
       { title: 'Referral', href: '/season-referral' },
     ],
+  },
+  {
+    title: 'ORE - Mining Pool',
+    links: [],
   },
   {
     title: '📃 Documentation',
