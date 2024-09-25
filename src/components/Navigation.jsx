@@ -195,7 +195,7 @@ export const navigation = [
     ],
   },
   {
-    title: '🏛️ Triad Season',
+    title: '🔱 Triad: Atlantis',
     links: [
       { title: 'Introduction', href: '/season' },
       { title: 'General', href: '/season-general' },
