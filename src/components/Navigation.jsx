@@ -187,14 +187,6 @@ export const navigation = [
     links: [{ title: 'Introduction', href: '/' }],
   },
   {
-    title: '🔱 NFT',
-    links: [
-      { title: 'Collection', href: '/nft-collection' },
-      { title: 'Stake', href: '/nft-stake' },
-      { title: 'Swap', href: '/nft-swap' },
-    ],
-  },
-  {
     title: '🔱 Triad: Atlantis',
     links: [
       { title: 'Introduction', href: '/season' },
@@ -203,7 +195,15 @@ export const navigation = [
     ],
   },
   {
-    title: 'ORE - Mining Pool',
+    title: '🔱 NFT',
+    links: [
+      { title: 'Collection', href: '/nft-collection' },
+      { title: 'Stake', href: '/nft-stake' },
+      { title: 'Swap', href: '/nft-swap' },
+    ],
+  },
+  {
+    title: '⛏️  ORE - Mining Pool',
     links: [],
   },
   {
@@ -215,6 +215,7 @@ export const navigation = [
     links: [
       { title: 'TriadFi', href: '/triadfi' },
       { title: 'NFT', href: '/nft' },
+      { title: 'Contact Us', href: '/season-contact' },
     ],
   },
 ]
