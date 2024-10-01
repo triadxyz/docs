@@ -215,7 +215,12 @@ export const navigation = [
     links: [
       { title: 'TriadFi', href: '/triadfi' },
       { title: 'NFT', href: '/nft' },
-      { title: 'Contact Us', href: '/season-contact' },
+    ],
+  },
+  {
+    title: '📩 Contact',
+    links: [
+      { title: 'Contact Us', href: '/contact' },
     ],
   },
 ]
