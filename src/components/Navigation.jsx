@@ -187,10 +187,6 @@ export const navigation = [
     links: [{ title: 'Introduction', href: '/' }],
   },
   {
-    title: '📃 Documentation',
-    links: [{ title: 'Quickstart', href: '/quickstart' }],
-  },
-  {
     title: '🧜🏻‍♂️ Triad: Atlantis',
     links: [
       { title: 'Introduction', href: '/season' },
@@ -212,7 +208,6 @@ export const navigation = [
   {
     title: '❓ FAQs',
     links: [
-      { title: 'TriadFi', href: '/triadfi' },
       { title: 'NFT', href: '/nft' },
       { title: 'Mining Pool', href: '/mining-pool-faq' },
     ],
