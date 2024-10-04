@@ -187,6 +187,10 @@ export const navigation = [
     links: [{ title: 'Introduction', href: '/' }],
   },
   {
+    title: '📃 Documentation',
+    links: [{ title: 'Quickstart', href: '/quickstart' }],
+  },
+  {
     title: '🔱 Triad: Atlantis',
     links: [
       { title: 'Introduction', href: '/season' },
@@ -204,23 +208,17 @@ export const navigation = [
   },
   {
     title: '⛏️  ORE - Mining Pool',
-    links: [],
+    links: [{ title: 'Introduction', href: '/mining-pool' }],
   },
   {
-    title: '📃 Documentation',
-    links: [{ title: 'Quickstart', href: '/quickstart' }],
+    title: '📩 Contact',
+    links: [{ title: 'Contact Us', href: '/contact' }],
   },
   {
     title: '❓ FAQs',
     links: [
       { title: 'TriadFi', href: '/triadfi' },
       { title: 'NFT', href: '/nft' },
-    ],
-  },
-  {
-    title: '📩 Contact',
-    links: [
-      { title: 'Contact Us', href: '/contact' },
     ],
   },
 ]
