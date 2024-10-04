@@ -191,7 +191,7 @@ export const navigation = [
     links: [{ title: 'Quickstart', href: '/quickstart' }],
   },
   {
-    title: '🔱 Triad: Atlantis',
+    title: '🧜🏻‍♂️ Triad: Atlantis',
     links: [
       { title: 'Introduction', href: '/season' },
       { title: 'General', href: '/season-general' },
