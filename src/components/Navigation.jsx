@@ -203,7 +203,6 @@ export const navigation = [
     links: [
       { title: 'Collection', href: '/nft-collection' },
       { title: 'Stake', href: '/nft-stake' },
-      { title: 'Swap', href: '/nft-swap' },
     ],
   },
   {
