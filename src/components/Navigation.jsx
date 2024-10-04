@@ -211,15 +211,16 @@ export const navigation = [
     links: [{ title: 'Introduction', href: '/mining-pool' }],
   },
   {
-    title: '📩 Contact',
-    links: [{ title: 'Contact Us', href: '/contact' }],
-  },
-  {
     title: '❓ FAQs',
     links: [
       { title: 'TriadFi', href: '/triadfi' },
       { title: 'NFT', href: '/nft' },
+      { title: 'Mining Pool', href: '/mining-pool-faq' },
     ],
+  },
+  {
+    title: '📩 Contact',
+    links: [{ title: 'Contact Us', href: '/contact' }],
   },
 ]
 
