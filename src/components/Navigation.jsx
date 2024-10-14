@@ -197,8 +197,8 @@ export const navigation = [
   {
     title: '🔱 NFT',
     links: [
-      { title: 'Collection', href: '/nft-collection' },
-      { title: 'Stake', href: '/nft-stake' },
+      { title: 'Collection', href: '/nft/collection' },
+      { title: 'Stake', href: '/nft/stake' },
     ],
   },
   {
