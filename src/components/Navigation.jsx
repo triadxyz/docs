@@ -208,8 +208,8 @@ export const navigation = [
   {
     title: '❓ FAQs',
     links: [
-      { title: 'NFT', href: '/nft' },
-      { title: 'Mining Pool', href: '/mining-pool-faq' },
+      { title: 'NFT', href: '/faq/nft' },
+      { title: 'Mining Pool', href: '/faq/mining-pool' },
     ],
   },
   {
