@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
+import { HeroPattern } from '../components/HeroPattern'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import { Logo } from '../components/Logo'
@@ -11,6 +12,8 @@ import { SectionProvider } from '../components/SectionProvider'
 export function Layout({ children, sections = [] }) {
   return (
     <SectionProvider sections={sections}>
+      <HeroPattern />
+
       <div className="lg:ml-72 xl:ml-80">
         <motion.header
           layoutScroll
@@ -22,7 +25,7 @@ export function Layout({ children, sections = [] }) {
                 <Logo className="h-6" />
               </Link>
             </div>
-          <Header /> 
+            <Header />
             <Navigation className="hidden lg:mt-10 lg:block" />
           </div>
         </motion.header>

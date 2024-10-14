@@ -104,9 +104,6 @@ function ActivePageMarker({ group, pathname }) {
 }
 
 function NavigationGroup({ group, className }) {
-  // If this is the mobile navigation then we always render the initial
-  // state, so that the state does not change during the close animation.
-  // The state will still update when we re-open (re-render) the navigation.
   let isInsideMobileNavigation = useIsInsideMobileNavigation()
   let [router, sections] = useInitialValue(
     [useRouter(), useSectionStore((s) => s.sections)],
@@ -134,17 +131,20 @@ function NavigationGroup({ group, className }) {
           layout
           className="absolute inset-y-0 left-2 w-px bg-zinc-900/10 dark:bg-white/5"
         />
+
         <AnimatePresence initial={false}>
           {isActiveGroup && (
             <ActivePageMarker group={group} pathname={router.pathname} />
           )}
         </AnimatePresence>
+
         <ul role="list" className="border-l border-transparent">
           {group.links.map((link) => (
             <motion.li key={link.href} layout="position" className="relative">
               <NavLink href={link.href} active={link.href === router.pathname}>
                 {link.title}
               </NavLink>
+
               <AnimatePresence mode="popLayout" initial={false}>
                 {link.href === router.pathname && sections.length > 0 && (
                   <motion.ul
@@ -190,8 +190,8 @@ export const navigation = [
     title: '🧜🏻‍♂️ Triad: Atlantis',
     links: [
       { title: 'Introduction', href: '/season' },
-      { title: 'General', href: '/season-general' },
-      { title: 'Referral', href: '/season-referral' },
+      { title: 'General', href: '/season/general' },
+      { title: 'Referral', href: '/season/referral' },
     ],
   },
   {

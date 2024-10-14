@@ -5,7 +5,6 @@ import { Heading } from '../components/Heading'
 
 export const a = Link
 export { Button } from '../components/Button'
-export { CodeGroup, Code as code, Pre as pre } from '../components/Code'
 
 export const h1 = function H1(props) {
   return <Heading className="mb-6" level={1} {...props} />
