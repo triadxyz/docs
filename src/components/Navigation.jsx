@@ -184,7 +184,10 @@ function NavigationGroup({ group, className }) {
 export const navigation = [
   {
     title: '🌐 Protocol',
-    links: [{ title: 'Introduction', href: '/' }],
+    links: [
+      { title: 'Introduction', href: '/' },
+      { title: 'Tokenomics', href: '/tokenomics' },
+    ],
   },
   {
     title: '🧜🏻‍♂️ Triad: Atlantis',
