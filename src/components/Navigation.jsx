@@ -199,10 +199,6 @@ export const navigation = [
     ],
   },
   {
-    title: '⛏️  ORE - Mining Pool',
-    links: [{ title: 'Introduction', href: '/mining-pool' }],
-  },
-  {
     title: '❓ FAQs',
     links: [
       { title: 'NFT', href: '/faq/nft' },
