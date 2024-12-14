@@ -187,6 +187,7 @@ export const navigation = [
     links: [
       { title: 'Introduction', href: '/' },
       { title: 'Tokenomics', href: '/tokenomics' },
+      { title: 'Stake', href: '/stake' },
     ],
   },
   {
@@ -195,13 +196,6 @@ export const navigation = [
       { title: 'Introduction', href: '/season' },
       { title: 'General', href: '/season/general' },
       { title: 'Referral', href: '/season/referral' },
-    ],
-  },
-  {
-    title: '🔱 NFT',
-    links: [
-      { title: 'Collection', href: '/nft/collection' },
-      { title: 'Stake', href: '/nft/stake' },
     ],
   },
   {
