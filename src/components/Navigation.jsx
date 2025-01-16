@@ -186,8 +186,8 @@ export const navigation = [
     title: '🌐 Protocol',
     links: [
       { title: 'Introduction', href: '/' },
-      { title: 'Tokenomics', href: '/tokenomics' },
       { title: 'How Triad Works', href: '/how-triad-works' },
+      { title: 'Tokenomics', href: '/tokenomics' },
       { title: 'Stake', href: '/stake' },
     ],
   },
