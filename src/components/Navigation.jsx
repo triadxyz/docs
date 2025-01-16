@@ -187,6 +187,7 @@ export const navigation = [
     links: [
       { title: 'Introduction', href: '/' },
       { title: 'Tokenomics', href: '/tokenomics' },
+      { title: 'How Triad Works', href: '/how-triad-works' },
       { title: 'Stake', href: '/stake' },
     ],
   },
