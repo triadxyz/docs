@@ -192,11 +192,13 @@ export const navigation = [
     ],
   },
   {
-    title: '🧜🏻‍♂️ Triad: Atlantis',
+    title: '🧜🏻‍♂️ Atlantis: Points & Rewards',
     links: [
       { title: 'Introduction', href: '/season' },
-      { title: 'General', href: '/season/general' },
+      { title: 'Multipliers', href: '/season/multipliers' },
       { title: 'Referral', href: '/season/referral' },
+      { title: 'Leaderboard', href: '/season/leaderboard' },
+      { title: 'Quests', href: '/season/quests' },
     ],
   },
   {
