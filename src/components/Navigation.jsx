@@ -1,8 +1,8 @@
-import { useRef } from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
 import clsx from 'clsx'
 import { AnimatePresence, motion, useIsPresent } from 'framer-motion'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { useRef } from 'react'
 import { useIsInsideMobileNavigation } from '../components/MobileNavigation'
 import { useSectionStore } from '../components/SectionProvider'
 import { Tag } from '../components/Tag'
@@ -186,9 +186,16 @@ export const navigation = [
     title: '🌐 Protocol',
     links: [
       { title: 'Introduction', href: '/' },
-      { title: 'How Triad Works', href: '/how-triad-works' },
+      { title: 'Prediction Markets', href: '/how-triad-works' },
       { title: 'Tokenomics', href: '/tokenomics' },
       { title: 'Stake', href: '/stake' },
+    ],
+  },
+    {
+    title: '👑 Prediction Kings',
+    links: [
+      { title: 'Introduction', href: '/prediction-kings' },
+      { title: 'How it works?', href: '/prediction-kings/how-it-works' },
     ],
   },
   {
