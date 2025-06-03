@@ -208,6 +208,12 @@ export const navigation = [
       { title: 'Quests', href: '/season/quests' },
     ],
   },
+      {
+    title: '🌊 Poseidon`s NFT',
+    links: [
+      { title: 'Introduction', href: '/poseidons' },
+    ],
+  },
   {
     title: '❓ FAQs',
     links: [
