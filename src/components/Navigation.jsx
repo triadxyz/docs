@@ -208,6 +208,12 @@ export const navigation = [
       { title: 'Quests', href: '/season/quests' },
     ],
   },
+   {
+    title: '📊 Markets',
+    links: [
+      { title: 'Create Market', href: '/markets' },
+    ],
+  },
       {
     title: '🌊 Poseidon`s NFT',
     links: [
