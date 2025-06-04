@@ -215,7 +215,7 @@ export const navigation = [
     ],
   },
       {
-    title: '🌊 Poseidon`s NFT',
+    title: '🌊 Poseidon NFT',
     links: [
       { title: 'Introduction', href: '/poseidons' },
     ],
