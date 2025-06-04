@@ -1,0 +1,78 @@
+# Order Book Guide
+
+### Introduction to the Order Book
+The **Order Book** is a dynamic and structured record of all pending buy and sell orders in a specific market. It reflects market depth and allows you to assess supply and demand to optimize your trading strategies.
+
+Currently, our Order Book supports the following order types:
+
+- Market Order
+
+- Limit Order
+
+### Order Book Structure and Functionality
+
+The Order Book is divided into two key columns:
+
+- **Bids (Buy Orders - Green):** Represent the highest prices traders are willing to pay for an asset. 
+
+- Asks (Sell Orders - Red): Represent the lowest prices traders are willing to accept for an asset.
+
+The difference between the highest Bid and the lowest Ask is called the spread. The smaller the spread, the higher the market liquidity, making trade execution more efficient.
+
+--- 
+ 
+## Market Order
+
+A **Market Order** is a buy or sell order that is executed immediately at the best available price in the Order Book. This type of order prioritizes speed over price, ensuring your transaction is completed instantly but exposing you to **slippage—an** adverse price movement due to market volatility.
+
+**Practical Example**
+
+Imagine you want to buy 10 units of an asset, and the available sell prices are:
+
+- 5 units at $5.00
+
+- 5 units at $5.10
+
+If you place a Market Buy Order for 10 units, part of your purchase will be filled at $5.00, and the rest at $5.10, reflecting the impact of slippage.
+
+### Key Features
+
+- Instant execution
+
+- Prioritizes speed over price
+
+- Risk of slippage, especially in low-liquidity markets
+
+---
+
+## Limit Order
+
+A **Limit Order** allows you to set a specific price at which you want to buy or sell an asset. The order is only executed if the market reaches that price, providing greater control over your trade.
+
+### Practical Example
+
+If an asset is trading at $10.00, but you only want to buy it if the price drops to $9.50, you can place a Limit Buy Order at $9.50. The order will remain in the Order Book until the market reaches that price.
+
+If you want to sell an asset only when it reaches $11.00, you can place a Limit Sell Order at $11.00. The order will be executed only when buyers are willing to pay that price.
+
+### Key Features
+
+- Guaranteed execution only at the set price or better
+
+- Greater control over market entry and exit
+
+- Risk of order not being filled if the market never reaches the desired price
+
+---
+
+## Managing Active Orders
+
+### Monitoring Pending Orders
+
+Your open orders can be viewed in the market interface, just below the Order Book. If you have active orders in multiple markets, you can manage them centrally in the Portfolio tab.
+
+### Canceling Orders
+
+If a **Limit Order** has not been fully filled, you can cancel it at any time. If an order has been partially executed (e.g., 8 out of 12 units bought/sold), only the remaining units (4) will be canceled.
+
+To cancel an order, simply locate it in your open orders list and click the **red “X” button**.

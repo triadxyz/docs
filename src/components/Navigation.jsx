@@ -212,6 +212,8 @@ export const navigation = [
     title: '📊 Markets',
     links: [
       { title: 'Create Market', href: '/markets' },
+      { title: 'Order Book guide', href: '/orderbook' },
+      { title: 'Fast Markets', href: '/fast-markets' },
     ],
   },
       {
