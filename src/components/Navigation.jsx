@@ -195,7 +195,7 @@ export const navigation = [
   {
     title: 'Season Points',
     links: [
-      { title: 'Introduction', href: '/season' },
+      { title: 'Introduction', href: '/season-points' },
     ],
   },
   {
