@@ -189,23 +189,19 @@ export const navigation = [
       { title: 'How Triad Works', href: '/how-triad-works' },
       { title: 'Tokenomics', href: '/tokenomics' },
       { title: 'Stake', href: '/stake' },
+      { title: 'Fees', href: '/fees' },
     ],
   },
   {
-    title: '🧜🏻‍♂️ Atlantis: Points & Rewards',
+    title: 'Season Points',
     links: [
       { title: 'Introduction', href: '/season' },
-      { title: 'Multipliers', href: '/season/multipliers' },
-      { title: 'Referral', href: '/season/referral' },
-      { title: 'Leaderboard', href: '/season/leaderboard' },
-      { title: 'Quests', href: '/season/quests' },
     ],
   },
   {
     title: '❓ FAQs',
     links: [
       { title: 'NFT', href: '/faq/nft' },
-      { title: 'Mining Pool', href: '/faq/mining-pool' },
     ],
   },
   {
