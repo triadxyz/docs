@@ -187,13 +187,14 @@ export const navigation = [
     links: [
       { title: 'Introduction', href: '/' },
       { title: 'How Triad Works', href: '/how-triad-works' },
+      { title: 'Currency Conversion', href: '/currency' },
       { title: 'Tokenomics', href: '/tokenomics' },
       { title: 'Stake', href: '/stake' },
       { title: 'Fees', href: '/fees' },
     ],
   },
   {
-    title: 'Season Points',
+    title: 'Season',
     links: [
       { title: 'Introduction', href: '/season-points' },
     ],
@@ -201,13 +202,14 @@ export const navigation = [
   {
     title: '❓ FAQs',
     links: [
+      { title: 'Season', href: '/faq/season-faq' },
       { title: 'NFT', href: '/faq/nft' },
     ],
   },
   {
     title: '📩 Contact',
     links: [{ title: 'Contact Us', href: '/contact' }],
-  },
+  }
 ]
 
 export function Navigation(props) {
