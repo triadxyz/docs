@@ -183,32 +183,32 @@ function NavigationGroup({ group, className }) {
 
 export const navigation = [
   {
-    title: '🌐 Protocol',
+    title: '🌐 Protocolo',
     links: [
-      { title: 'Introduction', href: '/' },
-      { title: 'How Triad Works', href: '/how-triad-works' },
-      { title: 'Currency Conversion', href: '/currency' },
+      { title: 'Introdução', href: '/' },
+      { title: 'Como Funciona a Triad', href: '/how-triad-works' },
+      { title: 'Conversão de Moeda', href: '/currency' },
       { title: 'Tokenomics', href: '/tokenomics' },
       { title: 'Stake', href: '/stake' },
       { title: 'Fees', href: '/fees' },
     ],
   },
   {
-    title: 'Season',
+    title: 'Temporada',
     links: [
-      { title: 'Introduction', href: '/season-points' },
+      { title: 'Introdução', href: '/season-points' },
     ],
   },
   {
     title: '❓ FAQs',
     links: [
-      { title: 'Season', href: '/faq/season-faq' },
+      { title: 'Temporada', href: '/faq/season-faq' },
       { title: 'NFT', href: '/faq/nft' },
     ],
   },
   {
-    title: '📩 Contact',
-    links: [{ title: 'Contact Us', href: '/contact' }],
+    title: '📩 Contato',
+    links: [{ title: 'Fale Conosco', href: '/contact' }],
   }
 ]
 
