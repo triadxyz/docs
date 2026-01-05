@@ -1,0 +1,112 @@
+# O que são mercados de previsão
+
+Os **mercados de previsão** são plataformas que permitem aos participantes negociar cotas que representam a probabilidade de eventos futuros. Esses mercados aproveitam a **inteligência coletiva**, possibilitando a especulação sobre uma ampla variedade de temas, incluindo política, esportes, negócios, tecnologia, criptomoedas e eventos culturais.
+
+O preço de uma cota reflete a probabilidade agregada que o mercado atribui a um resultado específico. Por exemplo, se uma cota sobre o resultado de uma eleição estiver precificada em **0,70 USDC**, isso sugere uma chance de **70%** de esse resultado ocorrer.
+
+Os usuários podem comprar ou vender cotas com base em suas expectativas, lucrando com previsões precisas.
+
+Além disso, os mercados de previsão permitem negociações baseadas na **flutuação dos preços das cotas**, possibilitando que os participantes especulem sobre aumentos ou quedas de preço ao longo do tempo, mesmo antes da resolução do evento. Isso cria uma dinâmica de mercado única, onde tanto previsões corretas quanto estratégias de negociação podem gerar oportunidades de lucro.
+
+---
+
+## Como a Triad funciona
+
+A **Triad** permite que você aja com base em suas previsões escolhendo entre duas opções simples:
+
+- **Sim:** você prevê que o evento vai acontecer. Se estiver certo, ganhará recompensas com base na precisão da sua previsão.
+- **Não:** você prevê que o evento não vai acontecer. Se sua previsão se confirmar, você receberá recompensas proporcionais ao resultado.
+
+---
+
+## Principais características dos mercados da Triad
+
+Na Triad, todos os mercados são liquidados em um modelo **1:1**. Isso significa que, quando um mercado é encerrado, os vencedores recebem um valor equivalente ao que os participantes que apostaram no resultado oposto contribuíram, com base na probabilidade do evento ocorrer.
+
+Esse sistema garante **justiça e transparência** para todos os usuários.
+
+---
+
+## Como funciona o mecanismo de pagamento 1:1
+
+### Previsões no mercado
+
+Os usuários fazem previsões sobre resultados específicos (por exemplo, quem vencerá um evento).  
+Os participantes que escolhem resultados diferentes contribuem para um **pool compartilhado** do mercado.
+
+### Valor do mercado e probabilidade
+
+O valor das contribuições é determinado pela probabilidade de um resultado específico ocorrer:
+
+- Quanto mais participantes preveem um resultado, **menor é a recompensa**, pois a probabilidade é considerada maior.
+- Resultados de **baixa probabilidade** oferecem recompensas potenciais maiores, pois envolvem mais risco.
+
+### O lado perdedor paga o vencedor
+
+Após o término do evento e a definição do resultado:
+
+- Os participantes que previram o resultado incorreto **perdem suas contribuições**
+- Esses valores são **distribuídos entre os vencedores**
+- A distribuição ocorre de forma **proporcional** às previsões e probabilidades associadas
+
+---
+
+## Exemplo prático
+
+Em um mercado de previsão:
+
+- Duas opções estão disponíveis: **“Resultado A”** e **“Resultado B”**
+- **1.000 USDC** são contribuídos para o *Resultado A*
+- **2.000 USDC** são contribuídos para o *Resultado B*
+
+Se o **Resultado A** for o correto:
+
+- Os participantes que previram o *Resultado B* perdem suas contribuições
+- Esses valores são distribuídos entre os participantes do *Resultado A*, de forma proporcional às probabilidades previstas
+
+# Mercados Rápidos
+
+## Como funciona?
+
+Os **Mercados Rápidos** são mercados de previsão **ao vivo**, desenvolvidos para resultados em **tempo real** e de **curto prazo**. Neles, os usuários podem especular sobre eventos rápidos, como flutuações instantâneas nos preços de criptomoedas.
+
+### Exemplo
+
+> **“O Bitcoin estará acima de 115.312 às 21h15?”**
+
+- Se o preço estiver acima desse valor no horário especificado e você votou **SIM**, você vence  
+- Se o preço não estiver acima, os usuários que escolheram **NÃO** vencem
+
+Os Mercados Rápidos utilizam **dados de preços em tempo real da Pyth Network**, garantindo **imparcialidade**, **precisão** e **transparência** em cada resultado.
+
+---
+
+## Regras e detalhes
+
+### Resolução de preços
+
+A resolução do mercado é baseada **exclusivamente** nos dados de preços fornecidos pela **Pyth Network** via Triad.
+
+- Os preços podem variar entre agregadores devido a diferenças de liquidez, estruturas de oráculos e pools consultados
+- Para garantir transparência e imparcialidade, **apenas o preço da Pyth no exato momento da resolução** é utilizado para determinar o resultado
+
+---
+
+### Pagamentos do mercado
+
+- Cada mercado é resolvido em até **24 horas**
+- Os pagamentos são processados em até **24 horas após a resolução**
+- A resolução ocorre no **dia seguinte**, conforme as regras e o contexto definidos para cada mercado
+
+Esse sistema garante que todos os usuários compitam em **condições justas**, com resultados determinados por **dados verificáveis e on-chain**.
+
+---
+
+### Garantia de transparência
+
+Todo o processo é executado por meio de **contratos inteligentes (smart contracts)**, garantindo que:
+
+- Os pagamentos ocorram de forma **automática**
+- As liquidações sejam **rápidas e precisas**
+- Não haja **intermediários**
+
