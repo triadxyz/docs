@@ -1,73 +1,98 @@
-# What Are Prediction Markets?
+# O que são mercados de previsão
 
-Prediction markets are platforms that allow participants to trade shares representing the likelihood of future events. These markets harness **collective intelligence**, enabling speculation on a wide range of topics, including politics, sports, business, technology, cryptocurrencies, and cultural events.
+Os **mercados de previsão** são plataformas que permitem aos participantes negociar cotas que representam a probabilidade de eventos futuros. Esses mercados aproveitam a **inteligência coletiva**, possibilitando a especulação sobre uma ampla variedade de temas, incluindo política, esportes, negócios, tecnologia, criptomoedas e eventos culturais.
 
-The price of a share reflects the aggregated probability the market assigns to a particular outcome. For example, if a share about an election result is priced at **0.70 USDC**, it suggests a **70% chance** of that outcome occurring. Users can buy or sell shares based on their expectations, profiting from accurate predictions.
+O preço de uma cota reflete a probabilidade agregada que o mercado atribui a um resultado específico. Por exemplo, se uma cota sobre o resultado de uma eleição estiver precificada em **0,70 USDC**, isso sugere uma chance de **70%** de esse resultado ocorrer.
 
-Additionally, prediction markets enable trading based on the fluctuation of share prices, allowing participants to speculate on price increases or decreases over time, even before the event is resolved. This creates a unique market dynamic where both accurate predictions and trading strategies can lead to profit opportunities.
+Os usuários podem comprar ou vender cotas com base em suas expectativas, lucrando com previsões precisas.
 
-## How Triad Works
 
-Triad empowers you to act on your predictions by choosing between two straightforward options:
+## Como a Triad funciona
 
-- **YES**: Predict that the event **will happen**. If you're right, you'll earn rewards based on the accuracy of your forecast.
-- **NO**: Predict that the event **won’t happen**. If your prediction holds true, you’ll receive rewards proportional to the outcome.
+A **Triad** permite que você aja com base em suas previsões escolhendo entre duas opções simples:
 
-## Key Features of Triad Markets
+- **Sim:** você prevê que o evento vai acontecer. Se estiver certo, ganhará recompensas com base na precisão da sua previsão.
+- **Não:** você prevê que o evento não vai acontecer. Se sua previsão se confirmar, você receberá recompensas proporcionais ao resultado.
 
-At Triad, all markets are resolved on a **1:1 basis**, meaning that when a market closes, the winners receive an amount equivalent to what participants who predicted the opposite outcome contributed, based on the probability of the event occurring. This system ensures **fairness and transparency** for all users.
 
-### How the 1:1 Payment Mechanism Works
+## Principais características dos mercados da Triad
 
-1. **Predictions in the Market**:
-   Users make predictions about specific outcomes (e.g., predicting who will win an event). Participants who predict different outcomes contribute to the market's shared pool.
+Na Triad, todos os mercados são liquidados em um modelo **1:1**. Isso significa que, quando um mercado é encerrado, os vencedores recebem um valor equivalente ao que os participantes que apostaram no resultado oposto contribuíram, com base na probabilidade do evento ocorrer.
 
-2. **Market Value and Probability**:
-   The value of contributions is determined by the likelihood of a specific outcome occurring. The more participants predict one outcome, the lower the reward, as the probability of that result is considered higher. Conversely, predictions on lower-probability outcomes offer higher potential rewards, as they are riskier.
+Esse sistema garante **justiça e transparência** para todos os usuários.
 
-3. **The Losing Side Pays the Winner**: After the event concludes and the result is known, the winners receive their share of the total contribution. The process works as follows:
 
-- Participants who predicted the incorrect outcome lose their contributions and pay the winners.
-- The amount is distributed according to the total contributions and probabilities. Winners receive amounts based on their predictions and associated probabilities.
+## Como funciona o mecanismo de pagamento 1:1
 
-### Practical Example
+1. ### Previsões no mercado
 
-In a prediction market:
+Os usuários fazem previsões sobre resultados específicos (por exemplo, quem vencerá um evento).  
+Os participantes que escolhem resultados diferentes contribuem para um **pool compartilhado** do mercado.
 
-- Two options are available: **“Outcome A”** and **“Outcome B.”**
-- **1,000 USDC** is contributed to “Outcome A” and **2,000 USDC** to “Outcome B.”
-- If “Outcome A” is correct, participants who predicted “Outcome B” lose their contributions and pay those who predicted “Outcome A,” proportionally to the predicted probabilities.
+2. ### Valor do mercado e probabilidade
 
-# Fast Markets
+O valor das contribuições é determinado pela probabilidade de um resultado específico ocorrer:
 
-## How it Works?
+- Quanto mais participantes preveem um resultado, **menor é a recompensa**, pois a probabilidade é considerada maior.
+- Resultados de **baixa probabilidade** oferecem recompensas potenciais maiores, pois envolvem mais risco.
 
-**Fast Markets** are live prediction markets designed for **short-term, real-time outcomes**. In them, users can speculate on rapid events, such as instant fluctuations in cryptocurrency prices.
+3. ### O lado perdedor paga o vencedor
 
-**For example:**
+Após o término do evento e a definição do resultado:
 
-> “Will Bitcoin be above 115,312 at 9:15 PM?”
-> 
-> - If the price is **above** that value at the specified time and you voted **YES**, you win.
-> - If the price is **not above**, the users who chose **NO** win.
+- Os participantes que previram o resultado incorreto **perdem suas contribuições**
+- Esses valores são **distribuídos entre os vencedores**
+- A distribuição ocorre de forma **proporcional** às previsões e probabilidades associadas
 
-Fast Markets use **real-time price data** from the **Pyth Network**, ensuring fairness, accuracy, and transparency in every result.
+## Exemplo prático
 
-## Rules and Details
+Em um mercado de previsão:
 
-### Price Resolution
+- Duas opções estão disponíveis: **“Resultado A”** e **“Resultado B”**
+- **1.000 USDC** são contribuídos para o *Resultado A*
+- **2.000 USDC** são contribuídos para o *Resultado B*
 
-- Market resolution is based **exclusively** on price data provided by the **Pyth Network** via Triad.
-- Prices may vary between aggregators due to differences in liquidity, oracle structures, and consulted pools.
-- To ensure transparency and fairness, **only the Pyth price at the exact moment of resolution is used** to determine the outcome.
+Se o **Resultado A** for o correto:
 
-### Market Payouts
+- Os participantes que previram o *Resultado B* perdem suas contribuições
+- Esses valores são distribuídos entre os participantes do *Resultado A*, de forma proporcional às probabilidades previstas
 
-- Each market is resolved within **24 hours**, and payouts are processed within **24 hours after resolution**.
-- Resolution occurs the following day, according to the rules and context defined for each market.
+# Mercados Rápidos
 
-This system ensures that all users compete under fair conditions, with results determined by **verifiable and on-chain data**.
+## Como funciona?
 
-### Transparency Guarantee
+Os **Mercados Rápidos** são mercados de previsão **ao vivo**, desenvolvidos para resultados em **tempo real** e de **curto prazo**. Neles, os usuários podem especular sobre eventos rápidos, como flutuações instantâneas nos preços de criptomoedas.
 
-The entire process is executed through **smart contracts**, ensuring that the payment from one side to the other is carried out automatically, quickly, and accurately, with no intermediaries.
+### Exemplo
+
+> **“O Bitcoin estará acima de 115.312 às 21h15?”**
+
+- Se o preço estiver acima desse valor no horário especificado e você votou **SIM**, você vence  
+- Se o preço não estiver acima, os usuários que escolheram **NÃO** vencem
+
+Os Mercados Rápidos utilizam **dados de preços em tempo real da Pyth Network**, garantindo **imparcialidade**, **precisão** e **transparência** em cada resultado.
+
+## Regras e detalhes
+
+### Resolução de preços
+
+A resolução do mercado é baseada **exclusivamente** nos dados de preços fornecidos pela **Pyth Network** via Triad.
+
+- Os preços podem variar entre agregadores devido a diferenças de liquidez, estruturas de oráculos e pools consultados
+- Para garantir transparência e imparcialidade, **apenas o preço da Pyth no exato momento da resolução** é utilizado para determinar o resultado
+
+### Pagamentos do mercado
+
+- Cada mercado é resolvido em até **24 horas**
+- Os pagamentos são processados em até **24 horas após a resolução**
+- A resolução ocorre no **dia seguinte**, conforme as regras e o contexto definidos para cada mercado
+
+Esse sistema garante que todos os usuários compitam em **condições justas**, com resultados determinados por **dados verificáveis e on-chain**.
+
+### Garantia de transparência
+
+Todo o processo é executado por meio de **contratos inteligentes (smart contracts)**, garantindo que:
+
+- Os pagamentos ocorram de forma **automática**
+- As liquidações sejam **rápidas e precisas**
+- Não haja **intermediários**
