@@ -38,12 +38,12 @@ const FeedbackForm = forwardRef(function FeedbackForm({ onSubmit }, ref) {
       className="absolute inset-0 flex items-center justify-center gap-6 md:justify-start"
     >
       <p className="text-sm text-zinc-600 dark:text-zinc-400">
-        Was this page helpful?
+        Esta página foi útil?
       </p>
       <div className="group grid h-8 grid-cols-[1fr,1px,1fr] overflow-hidden rounded-full border border-zinc-900/10 dark:border-white/10">
-        <FeedbackButton data-response="yes">Yes</FeedbackButton>
+        <FeedbackButton data-response="yes">Sim</FeedbackButton>
         <div className="bg-zinc-900/10 dark:bg-white/10" />
-        <FeedbackButton data-response="no">No</FeedbackButton>
+        <FeedbackButton data-response="no">Não</FeedbackButton>
       </div>
     </form>
   )
@@ -57,7 +57,7 @@ const FeedbackThanks = forwardRef(function FeedbackThanks(_props, ref) {
     >
       <div className="flex items-center gap-3 rounded-full bg-blue-50/50 py-1 pr-3 pl-1.5 text-sm text-blue-900 ring-1 ring-inset ring-blue-500/20 dark:bg-blue-500/5 dark:text-blue-200 dark:ring-blue-500/30">
         <CheckIcon className="h-5 w-5 flex-none fill-blue-500 stroke-white dark:fill-blue-200/20 dark:stroke-blue-200" />
-        Thanks for your feedback!
+        Obrigado pelo seu feedback!
       </div>
     </div>
   )
@@ -144,12 +144,12 @@ function PageNavigation() {
     <div className="flex">
       {previousPage && (
         <div className="flex flex-col items-start gap-3">
-          <PageLink label="Previous" page={previousPage} previous />
+          <PageLink label="Anterior" page={previousPage} previous />
         </div>
       )}
       {nextPage && (
         <div className="ml-auto flex flex-col items-end gap-3">
-          <PageLink label="Next" page={nextPage} />
+          <PageLink label="Próxima" page={nextPage} />
         </div>
       )}
     </div>
@@ -159,8 +159,8 @@ function PageNavigation() {
 function TwitterIcon(props) {
   return (
     <svg viewBox="0 0 20 20" aria-hidden="true" {...props}>
-      <path d="M16.712 6.652c.01.146.01.29.01.436 0 4.449-3.267 9.579-9.242 9.579v-.003a8.963 8.963 0 0 1-4.98-1.509 6.379 6.379 0 0 0 4.807-1.396c-1.39-.027-2.608-.966-3.035-2.337.487.097.99.077 1.467-.059-1.514-.316-2.606-1.696-2.606-3.3v-.041c.45.26.956.404 1.475.42C3.18 7.454 2.74 5.486 3.602 3.947c1.65 2.104 4.083 3.382 6.695 3.517a3.446 3.446 0 0 1 .94-3.217 3.172 3.172 0 0 1 4.596.148 6.38 6.38 0 0 0 2.063-.817 3.357 3.357 0 0 1-1.428 1.861 6.283 6.283 0 0 0 1.865-.53 6.735 6.735 0 0 1-1.62 1.744Z" />
-    </svg>
+      <path d="M12.6 0.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867 -5.07 -4.425 5.07H0.316l5.733 -6.57L0 0.75h5.063l3.495 4.633L12.601 0.75Zm-0.86 13.028h1.36L4.323 2.145H2.865z" stroke-width="1"></path>
+</svg>
   )
 }
 
@@ -189,7 +189,7 @@ function SmallPrint() {
   return (
     <div className="flex flex-col items-center justify-between gap-5 border-t border-zinc-900/5 pt-8 dark:border-white/5 sm:flex-row">
       <p className="text-xs text-zinc-600 dark:text-zinc-400">
-        &copy; Copyright {new Date().getFullYear()}. All rights reserved.
+        &copy; Copyright {new Date().getFullYear()}. Todos os direitos reservados.
       </p>
       <div className="flex gap-4">
         <SocialLink
@@ -197,14 +197,14 @@ function SmallPrint() {
           target="_blank"
           icon={TwitterIcon}
         >
-          Follow us on Twitter
+          Siga-nos no Twitter
         </SocialLink>
         <SocialLink
           href="https://github.com/triadxyz"
           target="_blank"
           icon={GitHubIcon}
         >
-          Follow us on GitHub
+          Siga-nos no GitHub
         </SocialLink>
       </div>
     </div>
