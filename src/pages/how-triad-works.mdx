@@ -4,9 +4,9 @@ Os **mercados de previsão** são plataformas que permitem aos participantes neg
 
 O preço de uma cota reflete a probabilidade agregada que o mercado atribui a um resultado específico. Por exemplo, se uma cota sobre o resultado de uma eleição estiver precificada em **0,70 USDC**, isso sugere uma chance de **70%** de esse resultado ocorrer. Os usuários podem comprar ou vender cotas com base em suas expectativas, lucrando com previsões precisas.
 
-Além disso, os mercados de previsão permitem negociações baseadas na flutuação dos preços das cotas, possibilitando que os participantes especulem sobre aumentos ou quedas de preço ao longo do tempo, mesmo antes da resolução do evento.Isso cria uma dinâmica de mercado única, onde tanto previsões precisas quanto estratégias de negociação podem gerar oportunidades de lucro.
+Além disso, os mercados de previsão permitem negociações baseadas na flutuação dos preços das cotas, possibilitando que os participantes especulem sobre aumentos ou quedas de preço ao longo do tempo, mesmo antes da resolução do evento. Isso cria uma dinâmica de mercado única, onde tanto previsões precisas quanto estratégias de negociação podem gerar oportunidades de lucro.
 
-## Como a Triad Funciona
+## Como a Triad funciona
 
 A **Triad** permite que você aja com base em suas previsões escolhendo entre duas opções simples:
 
@@ -22,7 +22,7 @@ Na Triad, todos os mercados são liquidados em um modelo **1:1**, o que signific
 1. **Previsões no Mercado**:
    Os usuários fazem previsões sobre resultados específicos (por exemplo, quem vencerá um evento). Os participantes que escolhem resultados diferentes contribuem para um pool compartilhado do mercado.
 
-2. **Valor de Mercado e Probabilidade**:
+2. **Valor do Mercado e Probabilidade**:
    O valor das contribuições é determinado pela probabilidade de um resultado específico ocorrer. Quanto mais participantes preveem um resultado, menor é a recompensa, pois a probabilidade desse resultado é considerada maior. Inversamente, previsões em resultados de baixa probabilidade oferecem recompensas potenciais maiores, pois são mais arriscadas.
 
 3. **O Lado Perdedor Paga o Vencedor**: Após o término do evento e a definição do resultado, os vencedores recebem sua parte do total contribuído. O processo funciona da seguinte forma:
@@ -34,19 +34,19 @@ Na Triad, todos os mercados são liquidados em um modelo **1:1**, o que signific
 
 Em um mercado de previsão:
 
-- Duas opções estão disponíveis: **"Resultado A**" e **"Resultado B.**"
-- **1.000 USDC** são contribuídos para o **"Resultado A"** e **2.000 USDC** para o **"Resultado B"**.”
+- Duas opções estão disponíveis: **“Resultado A”** e **“Resultado B”**.
+- **1.000 USDC** são contribuídos para o **“Resultado A”** e **2.000 USDC** para o **“Resultado B”**.
 - Se o **"Resultado A"** for o correto, os participantes que previram o **"Resultado B"** perdem suas contribuições, que são distribuídas entre aqueles que previram o **"Resultado A"**, proporcionalmente às probabilidades previstas.
 
-# Mercados Rápidos
+# Mercados rápidos
 
-## Como funcionam?
+## Como funciona?
 
 **Mercados Rápidos** são mercados de previsão ao vivo desenvolvidos para resultados em tempo real e de curto prazo. Neles, os usuários podem especular sobre eventos rápidos, como flutuações instantâneas nos preços de criptomoedas.
 
 **Por Exemplo:**
 
-> "O Bitcoin estará acima de 115,312 às 21h15?"
+> "O Bitcoin estará acima de 115.312 às 21h15?"
 > 
 > - Se o preço estiver **acima** desse valor no horário especificado e você votou **SIM**, você vence.
 > - Se o preço **não estiver acima**, os usuários que escolheram **NÃO** vencem.
@@ -55,9 +55,9 @@ Os Mercados Rápidos utilizam **dados de preços em tempo real** da **Pyth Netwo
 
 ## Regras e Detalhes
 
-### Resolução de Preço
+### Resolução de Preços
 
-- A resolução do mercado baseia-se **exclusivamente** nos dados de preços fornecidos pela **Pyth Network** via Triad.
+- A resolução do mercado é baseada **exclusivamente** nos dados de preços fornecidos pela **Pyth Network** via Triad.
 - Os preços podem variar entre agregadores devido a diferenças de liquidez, estruturas de oráculos e pools consultados.
 - Para garantir transparência e imparcialidade, **apenas o preço da Pyth no exato momento da resolução é utilizado** para determinar o resultado.
 
