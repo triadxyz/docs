@@ -188,7 +188,7 @@ export const navigation = [
       { title: 'Introduction', href: '/' },
       { title: 'How Triad Works', href: '/how-triad-works' },
       { title: 'Currency Conversion', href: '/currency' },
-      { title: 'Tokenomics', href: '/tokenomics' },
+      { title: 'TRD', href: '/trd' },
       { title: 'Stake', href: '/stake' },
       { title: 'Fees', href: '/fees' },
     ],
