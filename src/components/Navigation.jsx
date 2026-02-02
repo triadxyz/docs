@@ -194,15 +194,8 @@ export const navigation = [
     ],
   },
   {
-    title: 'Season',
-    links: [
-      { title: 'Introduction', href: '/season-points' },
-    ],
-  },
-  {
     title: '❓ FAQs',
     links: [
-      { title: 'Season', href: '/faq/season-faq' },
       { title: 'NFT', href: '/faq/nft' },
     ],
   },
