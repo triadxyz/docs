@@ -8,7 +8,7 @@ export const Logo = () => {
         width={140}
         height={28}
         src="/svg/logo-dark.webp"
-        alt="Triad Markets"
+        alt="Triadmarkets"
       />
     </span>
   )

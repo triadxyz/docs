@@ -23,9 +23,9 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         {router.pathname === '/' ? (
-          <title>Triad</title>
+          <title>Triadmarkets</title>
         ) : (
-          <title>{`Triad - ${pageProps.title}`}</title>
+          <title>{`Triadmarkets - ${pageProps.title}`}</title>
         )}
         <meta name="description" content={pageProps.description} />
       </Head>
