@@ -1,0 +1,60 @@
+export const description = 'Fast Markets'
+
+# Fast Markets
+
+**High-frequency prediction markets with 15-minute cycles.**
+
+---
+
+## What are Fast Markets?
+
+Fast Markets are live prediction markets designed for **short-term, real-time outcomes**. Users speculate on rapid events such as instant fluctuations in cryptocurrency prices.
+
+**Example:**
+
+> "Will Bitcoin be above $115,312 at 9:15 PM?"
+>
+> - If the price is **above** that value at the specified time and you voted **YES**, you win.
+> - If the price is **not above**, the users who chose **NO** win.
+
+---
+
+## How It Works
+
+1. **Choose an asset** — Select from **BTC**, **ETH**, or **SOL**.
+2. **Read the question** — Each round presents a clear price prediction question.
+3. **Place your prediction** — Vote **YES** or **NO** based on your analysis.
+4. **Wait for resolution** — Rounds last **15 minutes** and restart automatically.
+5. **Collect winnings** — If your prediction is correct, rewards are distributed automatically.
+
+---
+
+## Price Data
+
+Fast Markets use **real-time price data** from the **Pyth Network**, ensuring fairness, accuracy, and transparency in every result.
+
+> **Note:** Prices may vary between aggregators due to differences in liquidity, oracle structures, and consulted pools. To ensure fairness, **only the Pyth price at the exact moment of resolution** determines the outcome.
+
+---
+
+## Rules and Details
+
+### Resolution
+
+- Market resolution is based **exclusively** on price data provided by the **Pyth Network** via Triad.
+- Resolution occurs automatically at the end of each 15-minute round.
+
+### Payouts
+
+- Each market is resolved within **24 hours**, and payouts are processed within **24 hours after resolution**.
+- Resolution occurs the following day, according to the rules defined for each market.
+
+### Real-Time Charts
+
+Each Fast Market includes a **real-time chart** that allows users to analyze price trends before placing their prediction. This helps users make informed decisions based on current momentum.
+
+---
+
+## Transparency
+
+All results are determined by **verifiable, on-chain data**. The entire process is executed through **smart contracts** — no intermediaries, no manipulation.

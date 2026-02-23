@@ -1,0 +1,64 @@
+export const description = 'Levels and Score'
+
+# Levels & Score
+
+**Earn XP, climb levels, and maximize your rewards through consistent prediction activity.**
+
+---
+
+## Level System
+
+Every action on Triad earns **XP (Experience Points)** that contribute to your level progression. Higher levels unlock better rewards and recognition within the platform.
+
+### XP Sources
+
+| Action | XP Type | Description |
+| :--- | :--- | :--- |
+| Place a prediction | **Prediction XP** | Earned every time you enter a market position |
+| Win a prediction | **Correct Prediction XP** | Bonus XP for accurate predictions |
+| Provide liquidity | **Liquidity Provider XP** | Earned by supplying liquidity to markets |
+
+---
+
+## Dynamic Score
+
+Your **Score** represents your overall value as a participant on Triad. It combines your level, activity, and prediction accuracy into a single metric.
+
+### Activity Multiplier
+
+To reward consistent engagement and prevent inactive accounts from farming rewards, Triad uses an **Activity Multiplier** based on a **rolling 30-day window**.
+
+| Activity Level | Multiplier |
+| :--- | :--- |
+| Highly active (daily predictions) | **8.0x** |
+| Regularly active | **4.0x – 6.0x** |
+| Occasionally active | **2.0x – 3.0x** |
+| Minimum activity | **1.0x** |
+
+### How Decay Works
+
+- Your multiplier remains at maximum as long as you stay active.
+- After **14 days of inactivity**, the multiplier begins to decrease.
+- After **30 days of inactivity**, the multiplier hits its minimum (1.0x).
+- **Any new activity immediately resets the decay clock.**
+
+---
+
+## Effective Score & Rewards
+
+Your **Effective Score** determines your share of monthly rewards:
+
+> **Effective Score = Score × Activity Multiplier**
+
+### Monthly Rewards
+
+Rewards are distributed monthly based on each user's **Effective Score** relative to the total pool. The higher your score and the more consistent your activity, the larger your share of the reward pool.
+
+---
+
+## Key Takeaways
+
+- **Predict regularly** to maintain a high Activity Multiplier.
+- **Win predictions** to earn bonus XP and climb levels faster.
+- **Stay active** — even one prediction prevents multiplier decay.
+- **Your Effective Score** directly determines your monthly rewards.

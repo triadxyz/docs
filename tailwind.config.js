@@ -3,6 +3,9 @@ module.exports = {
   content: ['./{src,mdx}/**/*.{js,mjs,jsx,mdx}'],
   darkMode: 'class',
   theme: {
+    fontFamily: {
+      sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+    },
     fontSize: {
       '2xs': ['0.75rem', { lineHeight: '1.25rem' }],
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
@@ -21,6 +24,25 @@ module.exports = {
     },
     typography: require('./typography'),
     extend: {
+      colors: {
+        triad: {
+          dark: {
+            100: '#0C131F',
+            400: '#0A0B0F',
+          },
+          green: {
+            200: '#00B471',
+          },
+          red: {
+            200: '#FF5A5A',
+            300: '#EE5F67',
+          },
+          gray: {
+            100: '#8A8C99',
+            400: '#606E85',
+          },
+        },
+      },
       boxShadow: {
         glow: '0 0 4px rgb(0 0 0 / 0.1)',
       },

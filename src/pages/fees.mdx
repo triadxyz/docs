@@ -1,64 +1,66 @@
-import { HeroPattern } from '../components/HeroPattern'
+export const description = 'Prediction Markets'
 
-export const description = 'Triad Fees - How trading fees work'
+# Prediction Markets
 
-<HeroPattern />
+Prediction markets allow participants to trade shares representing the likelihood of future events. These markets harness **collective intelligence**, enabling speculation on politics, sports, business, technology, cryptocurrencies, and cultural events.
 
-# Triad Fees
+---
 
-Understand how fees work on the Triad platform in a simple and clear way.
+## How It Works
 
-## How Fees Work
+Triad empowers you to act on your predictions by choosing between two options:
 
-### Buy and Sell Fees
+- **YES** — Predict that the event **will happen**. If you are right, you earn rewards based on the accuracy of your forecast.
+- **NO** — Predict that the event **won't happen**. If your prediction holds true, you receive rewards proportional to the outcome.
 
-Triad uses a fee system that changes depending on the price:
+The price of a share reflects the aggregated probability the market assigns to a particular outcome. For example, if a share is priced at **$0.70**, it suggests a **70% chance** of that outcome occurring.
 
-- **Low prices (up to $0.90)**: 3.8% fee
-- **High prices ($0.91 to $0.99)**: Reduced fee from 1.9% down to 0.9%
-- **Smooth transition**: The higher the price, the lower the fee
+---
 
-### Detailed Fee Zones
+## 1:1 Payout Mechanism
 
-- **Green Zone ($0.91-$0.99)**: Reduced fees
-- **Blue Zone ($0.10-$0.90)**: Standard 3.8% fee
-- **Automatic calculation**: You always know how much you'll pay
+All Triad markets are resolved on a **1:1 basis**: when a market closes, winners receive an amount equivalent to what participants on the opposite side contributed, based on the probability of the event.
 
-### What happens when you win:
+### How It Works
 
-**✅ Winning Scenario (You were right):**
+1. **Predictions** — Users predict specific outcomes. Participants on different sides contribute to a shared pool.
+2. **Market Probability** — The more participants predict one outcome, the lower the reward (higher probability). Lower-probability predictions offer higher potential rewards.
+3. **Resolution** — After the event concludes, winners receive their share. Losers forfeit their contributions.
 
-- You get your investment back
-- Plus the profits from your prediction
-- A 0.36% payout fee is charged **only on profits**
-- Example: Invested $100, won $200 → Fee of $0.72 (only on the $200 profit)
+### Example
 
-**❌ Losing Scenario (You were wrong):**
+- Two options: **"Outcome A"** and **"Outcome B"**
+- **1,000 USDC** is contributed to "Outcome A" and **2,000 USDC** to "Outcome B"
+- If "Outcome A" is correct, participants who predicted "Outcome B" lose their contributions, which are paid to "Outcome A" holders proportionally.
 
-- You lose your investment
-- **No fee is charged** (you already lost)
+---
 
-## Practical Example
+## Fees
 
-### $1000 Investment
+### Trading Fees (Buy & Sell)
 
-1. **Buy**: You pay the trading fee (0.9% to 3.8%)
-2. **If you win**: 0.36% fee only on profit
+Triad uses a dynamic fee system based on share price:
 
-- Example: Invested $1000, won $2000 → Fee of $7.2 (only on the $2000 profit)
+| Price Range | Fee |
+| :--- | :--- |
+| **$0.10 – $0.90** | 3.8% (standard) |
+| **$0.91 – $0.99** | 1.9% → 0.9% (reduced) |
 
-3. **If you lose**: No additional fee
+The higher the price, the lower the fee — encouraging trading in balanced markets.
 
-### Why these fees?
+### Payout Fee
 
-- **Lower fees at high prices**: Encourages trading in balanced markets
-- **Low payout fee**: You keep almost all your winnings
-- **Complete transparency**: You always know how much you'll pay
+- **If you win:** A **0.36% fee** is charged **only on profits** (not on your original investment).
+- **If you lose:** **No fee** is charged.
 
-## Simple Calculator
+### Example — $1,000 Investment
 
-To calculate your fees:
+1. **Entry:** You pay the trading fee (0.9% to 3.8% depending on price).
+2. **Win:** Invested $1,000, won $2,000 → Fee of **$7.20** (0.36% on $2,000 profit).
+3. **Loss:** No additional fee.
 
-1. **Entry fee**: Check the table above based on price
-2. **Payout fee**: 0.36% only if you win
-3. **Total**: Add both fees for total cost
+---
+
+## Transparency
+
+The entire process is executed through **smart contracts**, ensuring automatic, fast, and accurate settlement with no intermediaries.

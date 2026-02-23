@@ -5,10 +5,10 @@ export const Logo = () => {
   return (
     <span className="flex items-center">
       <Image
-        width={100}
-        height={31}
-        src="/svg/logo-dark.svg"
-        alt="triad logo blue"
+        width={140}
+        height={28}
+        src="/svg/logo-dark.webp"
+        alt="Triad Markets"
       />
     </span>
   )
