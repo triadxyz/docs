@@ -47,11 +47,7 @@ function NavigationGroup({ group, className }) {
 export const navigation = [
   {
     title: 'Explore',
-    links: [
-      { title: 'Introduction', href: '/' },
-      { title: 'Triad Story', href: '/how-triad-works' },
-      { title: 'Founders', href: '/founders' },
-    ],
+    links: [{ title: 'Introduction', href: '/' }],
   },
   {
     title: 'Products',

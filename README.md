@@ -1,4 +1,4 @@
-# Triad
+# Triadmarkets
 
 ## Getting started
 
