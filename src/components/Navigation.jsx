@@ -47,7 +47,10 @@ function NavigationGroup({ group, className }) {
 export const navigation = [
   {
     title: 'Explore',
-    links: [{ title: 'Introduction', href: '/' }],
+    links: [
+      { title: 'Introduction', href: '/' },
+      { title: 'Tokenomics & $TRIAD', href: '/tokenomics' },
+    ],
   },
   {
     title: 'Products',
