@@ -193,7 +193,7 @@ function SmallPrint() {
       </p>
       <div className="flex gap-4">
         <SocialLink
-          href="https://twitter.com/triadfi"
+          href="https://twitter.com/triadmarkets"
           target="_blank"
           icon={TwitterIcon}
         >
